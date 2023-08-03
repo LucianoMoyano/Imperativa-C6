@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")({ sigint: true });
+
 // variables y tipos de datos: Una Variable es un contenedor que guarda información para, luego, usarla.
 //tipo de valores de variables pueden ser: string, number, boolean, undefined, null
 
@@ -39,7 +41,7 @@ let persona1 = {
   nombre: "Luciano",
 };
 
-console.log(a + b);
+//console.log(a + b);
 
 /* 
 
@@ -69,3 +71,90 @@ let: Permite actualizar una Variable pero no volver a crearla.
 const: Permite crear una Variable que se mantendrá constante durante todo el programa. Es decir, no se podrá actualizar ni cambiar.
 
 */
+
+console.log(
+  "--------------------------------------------------------------------------------"
+);
+/* 
+
+ - Operadores De Comparación En JavaScript
+
+... < ... : Indica que la condición de la izquierda es menor que la de la derecha.
+... > ... : Indica que la condición de la izquierda es mayor que la de la derecha.
+... >= ... : Indica que la condición de la izquierda es mayor o igual que la de la derecha.
+... <= ... : Indica que la condición de la izquierda es menor o igual que la de la derecha.
+... == ...: Hace una comparación blanda entre dos valores. Es decir, JavaScript hace una coerción de datos, para que ambos sean del mismo tipo y pueda compararlos.
+...===... : Indica que la condición de la izquierda tiene una igualdad estricta respecto a la de la derecha. Es decir, evalúa que el contenido y el tipo de dato sea el mismo. Al usar este comparador evitarás bugs a futuro.
+
+--------------------------------------------------------------------------------------
+
+¿Qué Diferencia Hay Entre = Y ==?
+
+El = asigna un valor. Es decir, es un operador de asignación.
+
+Por ejemplo:
+*/
+
+let edad2 = 27;
+
+/* 
+En cambio, == compara que dos valores sean iguales.
+
+Por ejemplo:
+*/
+
+if (10 == 15) {
+}
+
+/* 
+Operadores Lógicos Y De Desigualdad En JavaScript: todos los operadores lógicos y de desigualdad retornarán valores booleanos. La ventaja de usarlos es que permiten agrupar muchas condiciones y refactorizar el código, haciéndolo más rápido, legible y eficiente.
+
+... || ... : Este operador, llamado "o", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, alcanza con que solo 1 de ellas se cumpla. Si ninguna condición es true, la estructura será false.
+
+Ejemplo: 
+
+Para que || devuelva true, alcanza con que solo 1 sea verdadera.
+*/
+true || true; // La estructura es true
+true || false; // La estructura es true.
+false || true; // La estructura es true.
+false || false; // La estructura es false.
+/*
+... && ... : Este operador, llamado "y", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, todas las condiciones deben cumplirse. Basta con que 1 de las condiciones no se cumpla para que toda la estructura sea false .
+
+Para que && devuelva true, todas las expresiones deben ser verdaderas:
+*/
+true && true; // La estructura es true.
+true && false; // La estructura es false.
+false && true; // La estructura es false.
+false && false; // La estructura es false.
+/*
+... != ... : Este operador, llamado "diferente de..." o "de desigualdad", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, todas las condiciones deben ser diferentes entre sí. Basta con que 1 de las condiciones no sea diferente para que toda la estructura sea false .
+
+
+ - Diferencia Blanda (!=) O Estricta (!==)
+Al igual que con los operadores de comparación, la diferencia entre dos valores puede ser blanda o estricta. Mientras que, en la primera, se evaluará solo el contenido, en la segunda se considerará tanto el contenido como el tipo de dato.
+
+
+- Operador De Negación En JavaScript
+
+Los operadores de negación sirven para escribir código más optimizado, prolijo y elegante.
+
+ ! niega el valor booleano de cada dato. Es decir que, si es true devolverá false y si es false, retornará true.
+
+
+!true = false
+!false = true
+!!false = false
+!!true = true
+!!1 = true
+!0 = true
+!!0 = false 
+!"" = true
+!" " = false
+
+Metodo o funcion para booleanos = Boolean()
+*/
+
+let nombre2 = prompt("Ingresa tu nombre: ");
+console.log(`Hola ${nombre2}`);
