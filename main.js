@@ -95,6 +95,92 @@ El = asigna un valor. Es decir, es un operador de asignación.
 Por ejemplo:
 */
 
+let edadd2 = 27;
+
+/* 
+En cambio, == compara que dos valores sean iguales.
+
+Por ejemplo:
+*/
+
+if (10 == 15) {
+}
+
+/* 
+Operadores Lógicos Y De Desigualdad En JavaScript: todos los operadores lógicos y de desigualdad retornarán valores booleanos. La ventaja de usarlos es que permiten agrupar muchas condiciones y refactorizar el código, haciéndolo más rápido, legible y eficiente.
+
+... || ... : Este operador, llamado "o", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, alcanza con que solo 1 de ellas se cumpla. Si ninguna condición es true, la estructura será false.
+
+Ejemplo: 
+
+Para que || devuelva true, alcanza con que solo 1 sea verdadera.
+*/
+true || true; // La estructura es true
+true || false; // La estructura es true.
+false || true; // La estructura es true.
+false || false; // La estructura es false.
+/*
+... && ... : Este operador, llamado "y", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, todas las condiciones deben cumplirse. Basta con que 1 de las condiciones no se cumpla para que toda la estructura sea false .
+
+Para que && devuelva true, todas las expresiones deben ser verdaderas:
+*/
+true && true; // La estructura es true.
+true && false; // La estructura es false.
+false && true; // La estructura es false.
+false && false; // La estructura es false.
+/*
+... != ... : Este operador, llamado "diferente de..." o "de desigualdad", permite comparar un valor con 2, o más, condiciones. Para que la estructura dé como resultado true, todas las condiciones deben ser diferentes entre sí. Basta con que 1 de las condiciones no sea diferente para que toda la estructura sea false .
+
+
+ - Diferencia Blanda (!=) O Estricta (!==)
+Al igual que con los operadores de comparación, la diferencia entre dos valores puede ser blanda o estricta. Mientras que, en la primera, se evaluará solo el contenido, en la segunda se considerará tanto el contenido como el tipo de dato.
+
+
+- Operador De Negación En JavaScript
+
+Los operadores de negación sirven para escribir código más optimizado, prolijo y elegante.
+
+ ! niega el valor booleano de cada dato. Es decir que, si es true devolverá false y si es false, retornará true.
+
+
+!true = false
+!false = true
+!!false = false
+!!true = true
+!!1 = true
+!0 = true
+!!0 = false 
+!"" = true
+!" " = false
+
+Metodo o funcion para booleanos = Boolean()
+*/
+
+let nombree2 = prompt("Ingresa tu nombre: ");
+console.log(`Hola ${nombre2}`);
+
+console.log("------------------------------------------------");
+
+/* 
+
+ - Operadores De Comparación En JavaScript
+
+... < ... : Indica que la condición de la izquierda es menor que la de la derecha.
+... > ... : Indica que la condición de la izquierda es mayor que la de la derecha.
+... >= ... : Indica que la condición de la izquierda es mayor o igual que la de la derecha.
+... <= ... : Indica que la condición de la izquierda es menor o igual que la de la derecha.
+... == ...: Hace una comparación blanda entre dos valores. Es decir, JavaScript hace una coerción de datos, para que ambos sean del mismo tipo y pueda compararlos.
+...===... : Indica que la condición de la izquierda tiene una igualdad estricta respecto a la de la derecha. Es decir, evalúa que el contenido y el tipo de dato sea el mismo. Al usar este comparador evitarás bugs a futuro.
+
+--------------------------------------------------------------------------------------
+
+¿Qué Diferencia Hay Entre = Y ==?
+
+El = asigna un valor. Es decir, es un operador de asignación.
+
+Por ejemplo:
+*/
+
 let edad2 = 27;
 
 /* 
@@ -158,3 +244,46 @@ Metodo o funcion para booleanos = Boolean()
 
 let nombre2 = prompt("Ingresa tu nombre: ");
 console.log(`Hola ${nombre2}`);
+
+console.log("------------------------------------------------------");
+
+/*  - Declara 3 variables. Siempre teniendo en cuenta que los nombres deben ser descriptivos:
+Numérica
+String
+Booleana */
+let nombree = "Leandro";
+let edadLeandro = 27;
+let esAnciano = false;
+
+/*  
+- Mostrarlas por la consola en 3 console.log distintos (uno por cada variable) 
+*/
+console.log(nombre);
+console.log(edadLeandro);
+console.log(esAnciano);
+
+/* Ahora modifica tus console.log para que ahora se muestran las 3 variables en el mismo console.log */
+console.log(nombre + " " + edadLeandro + " " + esAnciano);
+
+/* 
+- Tomémonos un rato para armar las variables de los ejercicios 1 y 2 de esta guía. Recuerden guardarlos como archivos separados en la carpeta correspondiente.  
+*/
+
+//Variables de Mario:
+let puntos = 0;
+let cantDeMonedas = 0;
+let nivel = 1;
+let nroDeMundo = 1;
+let tiempoRestante = 913;
+let cantDeVidas = 3;
+let monedasDeBloqueMisterioro = 25;
+let estaGrande = false;
+
+//Variables de una persona
+let nombrePersona = "Jaime";
+let apellido = "Alvarez";
+let diaDeNacimiento = 4;
+let mesDeNacimiento = 7;
+let anioDeNacimiento = 1998;
+let nroDeDocumento = 12345678;
+let estaViva = true;
