@@ -28,13 +28,13 @@ Ejemplo.
 Si hiciéramos una app para evaluar a las personas que llegan a una guardia en un hospital, podríamos escribir el siguiente código que organice la atención de los pacientes en función de su urgencia:
 */
 
-let temperatura = prompt("Ingrese su temperatura: ");
+/* let temperatura = prompt("Ingrese su temperatura: ");
 
 if (temperatura < 37.5) {
   console.log("prioridad baja");
 } else {
   console.log("prioridad alta");
-}
+} */
 
 /* 
 La página Code to Graph te permite pegar tu código para ver cómo es el camino lógico de forma gráfica.
@@ -99,7 +99,7 @@ else... if es un recurso para poder anidar caminos intermedios entre el if y el 
 Siguiendo el ejemplo del bar, si un usuario puede pasar al bar si tiene 18 años, pero no puede tomar alcohol hasta ser mayor de edad a los 21, podríamos escribir el siguiente código: 
 */
 
-let edad = parseInt(prompt("ingrese su edad: "));
+/* let edad = parseInt(prompt("ingrese su edad: "));
 
 if (edad < 18) {
   console.log("No podes ingresar al bar");
@@ -109,7 +109,7 @@ if (edad < 18) {
   //console.log(edad);
   console.log("podes ingresar al bar y tomar alcohol");
 }
-
+ */
 /* 
 PSEUDOCODIGO
 
@@ -129,7 +129,7 @@ Este es un comentario multilínea
 sino, le damos la bienvenida y que siga caminando derecho
  */
 
-let procedencia = prompt("De que cotinente venis?");
+/* let procedencia = prompt("De que cotinente venis?");
 
 if (procedencia == "Asia") {
   console.log("Pasa por la derecha para que podamos chequearlo");
@@ -137,7 +137,7 @@ if (procedencia == "Asia") {
   console.log("pasa por la izquierda");
 } else {
   console.log("bienvenido, segui caminando derecho");
-}
+} */
 
 ("------------------------------");
 
@@ -159,7 +159,7 @@ Los Operadores Ternarios tienen una estructura con 3 Argumentos:
 
 //Ejemplo
 
-let numeroDeTragos = 0;
+/* let numeroDeTragos = 0;
 let cuantosTragos = parseInt(prompt("Cuantos tragos tomaste?"));
 
 cuantosTragos > numeroDeTragos
@@ -172,4 +172,98 @@ let nombre = prompt("Decime tu nombre: ");
 
 nombre
   ? console.log("Respuesta recibida")
-  : console.log("No respondiste con un nombre");
+  : console.log("No respondiste con un nombre"); */
+
+//Estructura SWITCH
+
+/* 
+La estructura condicional Switch() es otra alternativa para la toma de deciciones de nuestro programa.
+Es util cuando ya sabemos de antemano cuales son los posibles datos que se van a evaluar
+*/
+/* switch( condicion o parametro ){
+  case 1: //el primer caso que se va a evaluar
+  // dependiendo si el caso es el correcto nos devuelve este bloque de codigo
+
+    break // para cortar la ejecucion de los siguientes al encontrar el correcto se corta el progrmaa con el break
+    default :
+    //Este bloque de codigo se muestra en el caso de n encontrar una conicidencia con los case anteriores
+}
+ */
+
+let num = 4;
+
+switch (num) {
+  case 1:
+    console.log("entramos al primer caso");
+    break;
+  case 2:
+    console.log("entramos al segundo caso");
+    break;
+  case 3:
+    console.log("entramos al tercer caso");
+  default:
+    console.log(
+      "Este bloque de codigo se muestra en el caso de no encontrar una conicidencia con los case anteriores"
+    );
+}
+
+("----------------------------------------------");
+
+let dia = parseInt(prompt("Ingrese un numero: "));
+
+if (dia === 1) {
+  console.log("Lunes");
+} else if (dia === 2) {
+  console.log("Martes");
+} else if (dia === 3) {
+  console.log("Miercoles");
+} else if (dia === 4) {
+  console.log("Jueves");
+} else if (dia === 5) {
+  console.log("Viernes");
+} else if (dia === 6) {
+  console.log("Sabado");
+} else if (dia === 7) {
+  console.log("Domingo");
+} else {
+  console.log("Ingrese un numero del 1 al 7");
+}
+
+switch (num) {
+  case 1:
+    console.log("Lunes");
+    break;
+  case 2:
+    console.log("Martes");
+    break;
+  case 3:
+    console.log("Miercoles");
+    break;
+  case 4:
+    console.log("Jueves");
+    break;
+  case 5:
+    console.log("Viernes");
+    break;
+  case 6:
+    console.log("Sabado");
+    break;
+  case 7:
+    console.log("Domingo");
+    break;
+  default:
+    console.log("Ingrese un numero del 1 al 7");
+}
+
+switch (dia) {
+  case "lunes":
+  case "miercoles":
+    console.log("Tengo programación");
+    break;
+  case "martes":
+  case "jueves":
+    console.log("Tengo bd");
+    break;
+  default:
+    console.log("No tengo clase bb");
+}
