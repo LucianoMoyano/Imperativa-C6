@@ -119,19 +119,33 @@ Realizar un ejemplo donde se propone crear el objeto de un auto. Debe tener un a
 
 //CODIGO
 
-let auto = {
+let auto = [{
   marca: "Ford",
   modelo: "fiesta",
   kilometros: 0,
   nuevo: true,
   arrancar: function () {
-    console.log("el auto se enciende");
+    console.log("el auto tiene: " + this.kilometros + " Kilometros." );
   },
   partes: [
     { nombre: "bateria", estado: "nuevo" },
     { nombre: "motor", estado: "nuevo" },
   ],
-};
+}, {
+  marca: "Ford",
+  modelo: "fiesta",
+  kilometros: 3000,
+  nuevo: true,
+  arrancar: function () {
+    console.log("el auto tiene: " );
+  },
+  partes: [
+    { nombre: "bateria", estado: "nuevo" },
+    { nombre: "motor", estado: "nuevo" },
+  ],
+}];;
+
+auto.arrancar()
 
 // Utilizando Dot notation nos devuelve el Arreglo partes
 

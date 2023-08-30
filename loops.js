@@ -69,6 +69,14 @@ while (intento != palabraMagica) {
 }
 console.log("Bienvenido a la Caverna De Los 40 Ladrones"); */
 
+let numero = 10
+
+while(numero < 20){
+  console.log("bienvenido")
+  numero++
+}
+
+
 /* 
   - Variables Acumuladoras
   

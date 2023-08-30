@@ -54,6 +54,7 @@ cantarCumpleA("Jeff");
 
 function areaCuadrado(lado) {
   console.log(lado * lado);
+  
 }
 
 // Ahora, cuando ejecutamos areaCuadrado le pasaremos por Parámetro un valor que reemplace a lado.
@@ -206,9 +207,7 @@ Del lado derecho de los parámetros, un Token (=>).
 Por último, las llaves donde dentro estarán las acciones que se deban
 ejecutar. */
 // Arrow Function
-let sumar = (a, b) => {
-  return a + b;
-};
+let sumar = a => a + a;
 console.log(sumar(1, 3));
 // 4
 

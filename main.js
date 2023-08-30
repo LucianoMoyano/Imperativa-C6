@@ -22,7 +22,7 @@ fiesta = "la direccion es...";
 let nombre = "55"; // TIPO DE DATOS STRING
 let nombre1 = "Luciano";
 let a = 2; //Tipo de datos numerico
-let b = 2;
+let b = null
 
 //let edad = null; //tipo de dato nulo
 let verdadero = true; //tipo de datos booleano
